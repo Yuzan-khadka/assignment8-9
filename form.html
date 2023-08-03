@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    
+    <div id="form-wrapper">
+        <h1>Student Registration</h1>
+        <form id="my-form">
+            <div>
+                <label for="first-name">First Name</label>
+                <br>
+                <input name="first-name" id="first-name" type="text" />
+            </div>
+            <div>
+                <label for="last-name">Last Name</label>
+                <br>
+                <input name="last-name" id="last-name" type="text" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <br>
+                <input name="password" id="password" type="password" />
+            </div>
+            <div>
+                <label for="confirm-password">Confirm Password</label>
+                <br>
+                <input name="confirm-password" id="confirm-password" type="password" />
+                <small></small>
+            </div>
+            <div>
+                <label for="dob">DOB</label>
+                <br>
+                <input name="dob" id="dob" type="date" />
+                <small></small>
+            </div>
+            <!-- <div>
+                <label for="phone">Phone No</label>
+                <br>
+                <input name="phone" id="phone" type="tel" />
+            </div> -->
+            <div>
+                <label>Gender</label>
+                <br>
+                <label class="gender-label" for="male">Male</label>
+                <input name="gender" id="male" type="radio" />
+                <label class="gender-label" for="female">Female</label>
+                <input name="gender" id="female" type="radio" />
+                <label class="gender-label" for="other">Other</label>
+                <input name="gender" id="other" type="radio" />
+                <br>
+                <small></small>
+            </div>
+
+            <div>
+                <label for="course">Course</label>
+                <br>
+                <select name="course" id="course">
+                    <option value="">Full Stack</option>
+                    <option value="">Computer Programmer</option>
+                    <option value="">Networking</option>
+                    <option value="">Business</option>
+                    <option value="">Digital Marketing</option>
+
+                </select>
+            </div>
+            <input type="submit" id="submit-btn" value="Register">
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+
+</body>
+
+</html>
